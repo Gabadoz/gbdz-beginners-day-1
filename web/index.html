@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio - Gabadozxx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1>Gabadozxx | Portofolio</h1>
+        </div>
+
+        <button class="hamburger" id="hamburger-menu" aria-label="Buka Menu Navigasi" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#skills" class="nav-link">Keahlian</a></li>
+                <li><a href="#projects" class="nav-link">Proyek</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>Halo, Saya Gabadoz</h2>
+            <p>Ini adalah web portofolio saya dan pertama kali saya membuat web sendiri.</p>
+            <button id="btn-cta">My Project</button>
+        </section>
+
+        <section id="skills">
+            <h2>Keahlian Saya</h2>
+            <p>Teknologi yang sedang dan terus saya pelajari dalam perjalanan menjadi Full-Stack Developer :</p>
+            <div class="skill-container">
+                <div class="skill-card">
+                    <h3>HTML5</h3>
+                    <p>Struktur semantic HTML tag, SEO basic, dan aksesbilitas.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>CSS3</h3>
+                    <p>Styling, layout responsif dengan Flexbox, dan manipulasi element.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Java Script</h3>
+                    <p>Masih mempelajari tahap element-element, syntax, dan if/else di JavaScript Native.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Project Terbaru</h2>
+
+            <article class="card-projects">
+                
+                <div class="card-image">
+                    <img src="./images/image-preview.png" alt="Web Portofolio Pertama Saya"/>
+                </div>
+
+                <div class="card-content">
+                    <h3>Web Portofolio</h3>
+                    <p>Web ini adalah awal saya untuk menjadi web developer, juga web pertama kali yang saya buat, dan saya masukkan ke GitHub. Untuk membuat sebuah web portofolio sederhana pertama kali saya menggunakan HTML, CSS, JAVASCRIPT NATIVE.</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Hubungi Saya</h2>
+            <p>Saya suka diberi masukkan apapun. Beri saran, kritik, dan pertanyaan dibawah ini :</p>
+
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap :</label>
+                    <input type="text" name="name" id="name" placeholder="Masukkan Nama Anda..." required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email :</label>
+                    <input type="email" name="email" id="email" placeholder="nama@email.com" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan :</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Tuliskan pesan anda disini..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Kirim</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><i>&copy; 2026 Gabadoz. All Right Reserved. East Java, Indonesia, South-East Asia.</i></p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
